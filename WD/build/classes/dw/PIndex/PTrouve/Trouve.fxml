@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="1294.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="dw.PIndex.PTrouve.TrouveController">
+    <stylesheets>
+        <URL value="@trouve.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="root" layoutX="14.0" prefHeight="634.0" prefWidth="1280.0" style="-fx-background-color: #fff;">
+         <children>
+            <TableView fx:id="tab" layoutX="19.0" layoutY="78.0" prefHeight="545.0" prefWidth="1243.0">
+               <columns>
+                  <TableColumn fx:id="colnom" prefWidth="171.0" text="Nom" />
+                  <TableColumn fx:id="colprenom" prefWidth="200.0" text="Prénom" />
+                  <TableColumn fx:id="coldatep" minWidth="0.0" prefWidth="349.0" text="Le jour de la perte" />
+                  <TableColumn fx:id="colzonep" prefWidth="284.0" text="Lieu de la perte" />
+                  <TableColumn fx:id="coltypep" prefWidth="238.0" text="Type d'objet" />
+               </columns>
+            </TableView>
+            <Label layoutX="626.0" layoutY="14.0" text="Label................">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

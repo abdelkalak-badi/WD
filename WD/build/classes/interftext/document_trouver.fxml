@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="1294.0" styleClass="mainFxmlClass" stylesheets="@index.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interftext.Document_trouverController">
+   <children>
+      <Pane fx:id="root" layoutX="14.0" layoutY="14.0" prefHeight="634.0" prefWidth="1280.0">
+         <children>
+            <Label layoutX="437.0" layoutY="14.0" text="Liste des objets ou documents trouver:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TabPane layoutX="3.0" layoutY="61.0" prefHeight="515.0" prefWidth="1270.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="CIN">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tabCIN" layoutY="25.0" prefHeight="515.0" prefWidth="1253.0" style="-fx-background-color: transparent;">
+                                 <columns>
+                                    <TableColumn fx:id="cellCINCIN" prefWidth="171.0" text="CIN" />
+                                    <TableColumn fx:id="cellNomCIN" prefWidth="200.0" text="Nom" />
+                                    <TableColumn fx:id="cellPrenomCIN" minWidth="0.0" prefWidth="201.0" text="Prenom" />
+                                    <TableColumn fx:id="cellPersonneCIN" prefWidth="432.0" text="Information sur le reclamateur" />
+                                    <TableColumn fx:id="cellCenterCIN" prefWidth="248.0" text="Nom du centre" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="txtCINCIN" layoutX="1.0" prefHeight="25.0" prefWidth="171.0" promptText="Rechercher Par ..." />
+                              <TextField fx:id="txtNomCIN" layoutX="172.0" prefHeight="25.0" prefWidth="200.0" promptText="Rechercher Par ..." />
+                              <TextField fx:id="txtPrenomCIN" layoutX="372.0" prefHeight="25.0" prefWidth="200.0" promptText="Rechercher Par ..." />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                 <Tab text="Passport">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tabPASSPORT" layoutY="25.0" prefHeight="455.0" prefWidth="1259.0">
+                                <columns>
+                                  <TableColumn fx:id="cellNumPASSPORT" prefWidth="220.0" text="Numero du passport" />
+                                  <TableColumn fx:id="cellCinPASSPORT" prefWidth="165.0" text="Cin" />
+                                    <TableColumn fx:id="cellNomPASSPORT" prefWidth="197.0" text="Nom" />
+                                    <TableColumn fx:id="cellPrenomPASSPORT" prefWidth="198.0" text="Prenom" />
+                                    <TableColumn fx:id="cellPresonnePASSPORT" prefWidth="243.0" text="Information sur le reclamateur" />
+                                    <TableColumn fx:id="cellCenterPASSPORT" prefWidth="235.0" text="Nom du centre" />
+                                </columns>
+                              </TableView>
+                              <TextField fx:id="txtnumPASSPORT" prefHeight="25.0" prefWidth="220.0" promptText="Rechercher Par ..." />
+                              <TextField fx:id="txtcinPASSPORT" layoutX="220.0" prefHeight="25.0" prefWidth="165.0" promptText="Rechercher Par ..." />
+                              <TextField fx:id="txtnonPASSPORT" layoutX="385.0" prefHeight="25.0" prefWidth="198.0" promptText="Rechercher Par ..." />
+                              <TextField fx:id="txtprenomPASSPORT" layoutX="583.0" prefHeight="25.0" prefWidth="197.0" promptText="Rechercher Par ..." />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Autre">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tabAUTRE" layoutY="24.0" prefHeight="462.0" prefWidth="1270.0">
+                                <columns>
+                                  <TableColumn fx:id="cellNomAUTRE" prefWidth="155.0" text="Nom" />
+                                  <TableColumn fx:id="cellDescriptinAUTRE" prefWidth="479.00001525878906" text="Description" />
+                                    <TableColumn fx:id="cellpesonneAUTRE" prefWidth="411.0" text="Information sur le reclamateur" />
+                                    <TableColumn fx:id="cellCenterAUTRE" prefWidth="223.0" text="Nom du centre" />
+                                </columns>
+                              </TableView>
+                              <TextField fx:id="txtNomAUTRE" prefHeight="25.0" prefWidth="155.0" promptText="Rechercher Par ..." />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

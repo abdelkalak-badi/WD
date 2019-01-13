@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #FF0000;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="dw.SplashUIController">
+    <stylesheets>
+        <URL value="@splashui.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="root" prefHeight="480.0" prefWidth="640.0">
+         <children>
+            <Label layoutX="233.0" layoutY="195.0" text="Bonjour" textFill="WHITE">
+               <font>
+                  <Font name="ACaslonPro-Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="lawding" layoutX="292.0" layoutY="269.0" text="Télécharger..." textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

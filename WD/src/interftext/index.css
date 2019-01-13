@@ -1,0 +1,35 @@
+/*
+ * Empty Stylesheet file.
+ */
+.mainFxmlClass {
+
+}
+.button_menu{
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width:  0px 0px 2px 0px;
+}
+.button_menu:hover, .button_menu:focused{
+    
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+     -fx-border-width:  2px 0px 0px 0px;
+}
+.button_auth{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width:   1px 1px 1px 1px;
+}
+.button_auth:hover, .button_auth:focused{
+    
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+     -fx-border-width:   1px 1px 1px 1px;
+}
+.wrong-credentials
+{
+    -jfx-unfocus-color: -fx-red;
+    -jfx-focus-color: -fx-red;
+}

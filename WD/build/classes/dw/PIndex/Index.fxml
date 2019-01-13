@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dw.PIndex.IndexController">
+    <stylesheets>
+        <URL value="@index.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="700.0" prefWidth="1280.0">
+         <children>
+            <Pane prefHeight="67.0" prefWidth="1280.0" style="-fx-background-color: #EF0000;">
+               <children>
+                  <HBox layoutY="23.0" prefHeight="41.0" prefWidth="1280.0" style="-fx-background-color: #EF0000;">
+                     <children>
+                        <Label fx:id="LabelID" alignment="CENTER" prefHeight="17.0" prefWidth="44.0" text="Labelic" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Labelnomcenter" prefHeight="17.0" prefWidth="175.0" text="Labelnomcenter" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#ObjetPerdu" prefHeight="47.0" prefWidth="280.0" style="-fx-border-radius: 0; -fx-background-radius: 0; -fx-background-color: #EF0000;" text="Signaler les documents " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Consulter" prefHeight="47.0" prefWidth="280.0" style="-fx-background-radius: 0; -fx-border-radius: 0; -fx-background-color: #EF0000;" text="Continuer les documents manquants" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Refresh" prefHeight="47.0" prefWidth="155.0" style="-fx-background-radius: 0; -fx-border-radius: 0; -fx-background-color: #EF0000;" text="Mise à jour" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="MOVE" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="root" layoutY="66.0" prefHeight="634.0" prefWidth="1280.0" style="-fx-background-color: #fff;">
+               <children>
+                  <TableView fx:id="tab" layoutX="19.0" layoutY="14.0" prefHeight="609.0" prefWidth="1243.0">
+                     <columns>
+                        <TableColumn fx:id="colnom" prefWidth="171.0" text="Nom" />
+                        <TableColumn fx:id="colprenom" prefWidth="200.0" text="Prénom" />
+                        <TableColumn fx:id="coldatep" minWidth="0.0" prefWidth="349.0" text="Le jour de la perte" />
+                        <TableColumn fx:id="colzonep" prefWidth="284.0" text="Lieu de la perte" />
+                        <TableColumn fx:id="coltypep" prefWidth="238.0" text="Type d'objet" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
